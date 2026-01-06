@@ -1,0 +1,26 @@
+# Pytest
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Coverage reports
+htmlcov/
+
+# Python eggs
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Local settings
+.claude/settings.local.json
+
+# OS-specific
+.DS_Store
+Thumbs.db

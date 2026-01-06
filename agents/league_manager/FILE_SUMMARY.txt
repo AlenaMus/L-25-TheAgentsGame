@@ -1,0 +1,46 @@
+# League Manager - File Summary
+
+## Core Implementation Files
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\main.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\config.py
+
+## Handlers (MCP Tools)
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\handlers\player_registration.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\handlers\referee_registration.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\handlers\match_result.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\handlers\league_query.py
+
+## Scheduler
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\scheduler\round_robin.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\scheduler\referee_assigner.py
+
+## Standings
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\standings\calculator.py
+
+## Storage
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\storage\agent_registry.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\storage\league_store.py
+
+## Utilities
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\src\league_manager\utils\logger.py
+
+## Tests
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\tests\conftest.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\tests\unit\test_scheduler.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\tests\unit\test_standings.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\tests\integration\test_registration_flow.py
+
+## Configuration & Documentation
+
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\requirements.txt
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\setup.py
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\README.md
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\.env.example
+C:\AIDevelopmentCourse\L-25-TheGame\agents\league_manager\IMPLEMENTATION_STATUS.md

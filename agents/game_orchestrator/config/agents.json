@@ -1,0 +1,77 @@
+{
+  "agents": [
+    {
+      "agent_id": "league_manager",
+      "agent_type": "LEAGUE_MANAGER",
+      "port": 8000,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/league_manager",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "league_manager.main"],
+      "health_endpoint": "http://localhost:8000/health",
+      "dependencies": []
+    },
+    {
+      "agent_id": "REF01",
+      "agent_type": "REFEREE",
+      "port": 8001,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/referee_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "referee.main", "--port", "8001"],
+      "health_endpoint": "http://localhost:8001/health",
+      "dependencies": ["league_manager"]
+    },
+    {
+      "agent_id": "REF02",
+      "agent_type": "REFEREE",
+      "port": 8002,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/referee_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "referee.main", "--port", "8002"],
+      "health_endpoint": "http://localhost:8002/health",
+      "dependencies": ["league_manager"]
+    },
+    {
+      "agent_id": "P01",
+      "agent_type": "PLAYER",
+      "port": 8101,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/player_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "player_agent.main", "--port", "8101"],
+      "health_endpoint": "http://localhost:8101/health",
+      "dependencies": ["league_manager"]
+    },
+    {
+      "agent_id": "P02",
+      "agent_type": "PLAYER",
+      "port": 8102,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/player_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "player_agent.main", "--port", "8102"],
+      "health_endpoint": "http://localhost:8102/health",
+      "dependencies": ["league_manager"]
+    },
+    {
+      "agent_id": "P03",
+      "agent_type": "PLAYER",
+      "port": 8103,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/player_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "player_agent.main", "--port", "8103"],
+      "health_endpoint": "http://localhost:8103/health",
+      "dependencies": ["league_manager"]
+    },
+    {
+      "agent_id": "P04",
+      "agent_type": "PLAYER",
+      "port": 8104,
+      "working_dir": "C:/AIDevelopmentCourse/L-25-TheGame/agents/player_agent",
+      "startup_command": ["venv/Scripts/python.exe", "-m", "player_agent.main", "--port", "8104"],
+      "health_endpoint": "http://localhost:8104/health",
+      "dependencies": ["league_manager"]
+    }
+  ],
+  "orchestrator": {
+    "dashboard_port": 9000,
+    "health_check_interval": 5,
+    "startup_grace_period": 2,
+    "agent_startup_timeout": 30,
+    "auto_start": true,
+    "registration_timeout": 120,
+    "min_players": 2,
+    "min_referees": 1
+  }
+}
